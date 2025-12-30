@@ -28,7 +28,23 @@ console.log(imc(130, 1.85));
 console.log('///////////////////////////////////////////');
 console.log('COR FAVORITA')
 
-function corFavorita(){
-   if
+function corFavorita(cor){
+   if(cor === 'azul'){
+      return('Eu gosto do céu')
+   }else if(cor === 'verde'){
+      return('Cor de mato')
+   }else{
+      return('Sem cores')
+   }
 }
+
+
+function dizerOi(){
+   console.log('OI')
+}
+
+addEventListener('click',dizerOi)
+
+
+
 
