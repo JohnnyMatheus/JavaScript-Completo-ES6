@@ -43,8 +43,32 @@ function dizerOi(){
    console.log('OI')
 }
 
-addEventListener('click',dizerOi)
+//addEventListener('click', dizerOi);
 
 
 
+function terceiraIdade(idade){
+   if(typeof idade !== 'number'){
+     return 'Por favor preecha um número';
+   }
+   else if(idade >= 6){
+      return true;
+   }else{
+      return false;
+   }
+}
 
+
+console.log(terceiraIdade(60));
+
+
+////////////////////////////////////
+
+
+function faltavisitar(paisesVisitados){
+   var totalPaises = 193;
+   return `Faltam visitar ${totalPaises - paisesVisitados}`
+
+}
+
+console.log(faltavisitar(10));
