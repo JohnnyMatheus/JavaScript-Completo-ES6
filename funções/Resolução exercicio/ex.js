@@ -54,7 +54,17 @@ console.log(tipoDado(2))
 // utilize essa função para mostrar no console o seu nome completo
 // quando o evento 'scroll' ocorrer.
 
+const body = document.querySelector("body");
+body.style.height = "12000px";
+
+function motrarNome(){
+    console.log('Johnny Matheus');  
+}
+
+addEventListener('scroll',motrarNome)
+
 // // Corrija o erro abaixo
+// Corrija o erro abaixo
 // function precisoVisitar(paisesVisitados) {
 //   var totalPaises = 193;
 //   return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
@@ -64,3 +74,13 @@ console.log(tipoDado(2))
 // }
 // precisoVisitar(20);
 // jaVisitei(20);
+
+var totalPaises = 193;
+function precisoVisitar(paisesVisitados) {
+  return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
+}
+function jaVisitei(paisesVisitados) {
+  return `Já visitei ${paisesVisitados} do total de ${totalPaises}  países`;
+}
+console.log(precisoVisitar(20));
+console.log(jaVisitei(20));
